@@ -12,7 +12,7 @@ const Dashboard = () => {
   return (
     <div className="p-6 max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">La tua Dashboard</h1>
-      <p className="mb-4 text-gray-600">Qui puoi vedere i tuoi articoli e gestirli.</p>
+      <p className="mb-4 text-gray-600">Qui puoi gestire gli articoli</p>
 
       {articles.length === 0 ? (
         <p className="text-gray-500">Nessun articolo trovato.</p>

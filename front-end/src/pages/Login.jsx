@@ -13,7 +13,7 @@ function Login() {
     try {
       const res = await login(email, password);
       if (res.success) {
-        navigate("/"); // vai alla home
+        navigate("/"); // Questo ti redirecta alla home
       } else {
         setError("Credenziali non valide");
       }
