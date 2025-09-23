@@ -33,6 +33,11 @@ export const postComment = async (articleId, content) => {
   return res.data;
 };
 
+export const deleteComment = async (commentId) => {
+  const res = await API.delete(`/comments/${commentId}`);
+  return res.data;
+};
+
 // Categorie
 export const getCategories = async () => {
   const res = await API.get("/categories");

@@ -89,8 +89,7 @@ const deleteCommentById = async (req ,res) => {
     const _id = req.params.id;
 
     try {
-        await Comment.deleteOne({ _id, user: user._id }, data);
-
+        await Comment.deleteOne({ _id, user: user._id });
         return res.status(200).json({ success: true, message: "Comment deleted" });
     } catch(error) {
         return outErrors(res, error)
